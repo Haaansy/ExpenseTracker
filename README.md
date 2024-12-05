@@ -39,7 +39,7 @@ Ensure the following tools are installed on your system:
    Clone this repository to your local machine using the following command:
 
    ```bash
-   git clone https://github.com/Haaansy/expensetrackerr.git
+   git clone https://github.com/Haaansy/expensetracker.git
 
 ### Start XAMPP
 
@@ -72,7 +72,7 @@ Ensure the following tools are installed on your system:
 
 8. In your browser, navigate to:
 ```bash
-  http://localhost/expense-tracker
+  http://localhost/ExpenseTracker
 ```
 
 You should see the application's landing page.
