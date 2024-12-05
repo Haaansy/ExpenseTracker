@@ -67,9 +67,10 @@ Ensure the following tools are installed on your system:
     $dbpass = "";
     $database = "user_system";
    ?>
-8. Run the Application
+   
+### Run the Application
 
-In your browser, navigate to:
+8. In your browser, navigate to:
 ```bash
   http://localhost/expense-tracker
 ```
