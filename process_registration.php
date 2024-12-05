@@ -9,11 +9,7 @@ $program = $_POST["program"];
 $password_hash = password_hash($password, PASSWORD_DEFAULT);
 
 // Establish a database connection
-$conn = new mysqli("localhost", "root", "", "user_system");
-
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once 'db_config.php';
 
 // Use a prepared statement to insert user data
 $query = "INSERT INTO users (username, password) VALUES (?, ?)";

@@ -1,6 +1,6 @@
 <?php
 session_start();
-$conn = mysqli_connect('localhost', 'root', '', 'user_system');
+include 'db_config.php';
 
 // Check if the user is logged in
 if (!isset($_SESSION['username'])) {

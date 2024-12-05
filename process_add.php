@@ -21,12 +21,7 @@ if (empty($category) || empty($description) || empty($amount)) {
 }
 
 // Establish a connection to the database
-$conn = new mysqli("localhost", "root", "", "user_system");
-
-// Check the connection
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+require_once 'db_config.php';
 
 // Use a prepared statement to insert user data
 $query = "INSERT INTO transactions (owner, category, amount, description) VALUES (?, ?, ?, ?)";

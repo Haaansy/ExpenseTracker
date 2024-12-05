@@ -2,11 +2,7 @@
 $username = $_POST['username'];
 $password = $_POST['password'];
 
-$conn = mysqli_connect('localhost', 'root', '', 'user_system');
-
-if (!$conn) {
-    die("Connection failed: " . mysqli_connect_error());
-}
+require_once 'db_config.php';
 
 // Use prepared statements to prevent SQL injection
 $query = "SELECT * FROM users WHERE username = ?";
